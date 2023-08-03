@@ -1,0 +1,41 @@
+/* App.css */
+.sidebar {
+    transition: width 0.3s;
+    width: 280px;
+    background-color: #f8f9fa;
+    padding: 15px;
+  }
+  
+  .sidebar.collapsed {
+    width: 64px;
+  }
+  
+  .collapse-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    margin-left: -15px;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 64px;
+    }
+  
+    .sidebar.collapsed {
+      width: 64px;
+    }
+  
+    .collapse-button {
+      display: block;
+    }
+  
+    /* Additional styling for collapsed state */
+    .sidebar.collapsed .collapse-button {
+      margin-left: 0;
+    }
+  }
+  
